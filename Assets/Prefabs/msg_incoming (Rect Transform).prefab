@@ -160,6 +160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8260486228307551518}
   - component: {fileID: 4043288040897573883}
+  - component: {fileID: 1406291335749689512}
   m_Layer: 5
   m_Name: msg_incoming (Rect Transform)
   m_TagString: Untagged
@@ -214,6 +215,19 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1406291335749689512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3228896609795844034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d641f3e207b84c498e43871f984b639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text_Reference: {fileID: 384678662475547677}
 --- !u!1 &7035746641874995380
 GameObject:
   m_ObjectHideFlags: 0
