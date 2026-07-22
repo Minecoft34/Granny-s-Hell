@@ -383,6 +383,7 @@
 "Assets/Scripts/FTF_SMS.cs"
 "Assets/Scripts/FTF_SMS_Test.cs"
 "Assets/Scripts/FTF_SMS_TMProRef.cs"
+"Assets/Scripts/IMG_Selection.cs"
 "Assets/Scripts/InicioJuego.cs"
 "Assets/Scripts/UIDrag.cs"
 -langversion:9.0

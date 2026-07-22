@@ -1431,13 +1431,13 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: 15
     m_Bottom: 0
-  m_ChildAlignment: 4
+  m_ChildAlignment: 1
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 200, y: 200}
-  m_Spacing: {x: 11, y: 11}
+  m_Spacing: {x: 15, y: 15}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!114 &719178791
@@ -1801,6 +1801,26 @@ PrefabInstance:
     - target: {fileID: 4232912300240635349, guid: 21a68bad44a2b1f43bd9538794187d4f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9109280621566660419, guid: 21a68bad44a2b1f43bd9538794187d4f, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9109280621566660419, guid: 21a68bad44a2b1f43bd9538794187d4f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9109280621566660419, guid: 21a68bad44a2b1f43bd9538794187d4f, type: 3}
+      propertyPath: m_Color.b
+      value: 0.28627452
+      objectReference: {fileID: 0}
+    - target: {fileID: 9109280621566660419, guid: 21a68bad44a2b1f43bd9538794187d4f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 9109280621566660419, guid: 21a68bad44a2b1f43bd9538794187d4f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9803922
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
