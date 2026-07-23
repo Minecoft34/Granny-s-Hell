@@ -42,8 +42,14 @@
      <Compile Include="Assets\Scripts\DeleteButton.cs" />
      <Compile Include="Assets\Scripts\GalleryImage.cs" />
      <Compile Include="Assets\Scripts\UIDrag.cs" />
-     <Compile Include="Assets\Scripts\FTF_SMS_Test.cs" />
+     <Compile Include="Assets\Scripts\BlockManager.cs" />
      <Compile Include="Assets\Scripts\InicioJuego.cs" />
+     <Compile Include="Assets\Scripts\BlockButton.cs" />
+     <Compile Include="Assets\Scripts\SelectionManager.cs" />
+     <Compile Include="Assets\Scripts\SMS_Selected.cs" />
+     <Compile Include="Assets\Scripts\DeleteMessage.cs" />
+     <Compile Include="Assets\Scripts\ConversationManager.cs" />
+     <Compile Include="Assets\Scripts\ChoiceButton.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

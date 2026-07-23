@@ -10,6 +10,7 @@ public class FTF_SMS : MonoBehaviour
     public Transform Content_Parent;
     public GameObject PlayerSMS_Ins;
     public GameObject ContactSMS_Ins;
+    public GameObject SystemMSG_Ins;
 
     private void Awake()
     {
@@ -21,11 +22,6 @@ public class FTF_SMS : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
     public void AddMessage(bool Sender_Player, string Message)
@@ -54,5 +50,13 @@ public class FTF_SMS : MonoBehaviour
             TextMeshProUGUI txt = contactSMS_Text.Text_Reference;
             txt.text = Message;
         }
+    }
+
+    public void SendSystemMSG()
+    {
+         //Con Instantiate hacemos una copia de un prefab y lo añadimos a la escena. Hacemos copia del prefab que es el primer argumento y lo añadimos en la escena donde el segundo argumento.
+        GameObject sysMSG = Instantiate(SystemMSG_Ins, Content_Parent.transform.position, Quaternion.identity);
+        //Quaternion.identity significa que el mensaje aparece sin rotación, es decir, con rotación 0,0,0. 
+        sysMSG.transform.SetParent(Content_Parent.transform, false);
     }
 }
