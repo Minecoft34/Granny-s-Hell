@@ -398,6 +398,8 @@
 "Assets/Scripts/SelectionManager.cs"
 "Assets/Scripts/SMS_Selected.cs"
 "Assets/Scripts/UIDrag.cs"
+"Assets/Scripts/Virus.cs"
+"Assets/Scripts/VirusManager.cs"
 -langversion:9.0
 
 /deterministic
