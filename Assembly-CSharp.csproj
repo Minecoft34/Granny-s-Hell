@@ -39,6 +39,7 @@
      <Compile Include="Assets\Scripts\DeleteMessage.cs" />
      <Compile Include="Assets\Scripts\SMS_Selected.cs" />
      <Compile Include="Assets\Scripts\FTF_SMS.cs" />
+     <Compile Include="Assets\Scripts\Virus.cs" />
      <Compile Include="Assets\Scripts\SelectionManager.cs" />
      <Compile Include="Assets\Scripts\GalleryManager.cs" />
      <Compile Include="Assets\Scripts\FTF_SMS_TMProRef.cs" />
@@ -46,6 +47,7 @@
      <Compile Include="Assets\Scripts\ChoiceButton.cs" />
      <Compile Include="Assets\Scripts\GalleryImage.cs" />
      <Compile Include="Assets\Scripts\UIDrag.cs" />
+     <Compile Include="Assets\Scripts\VirusManager.cs" />
      <Compile Include="Assets\Scripts\EscapeManager.cs" />
      <Compile Include="Assets\Scripts\EscapeButton.cs" />
      <Compile Include="Assets\Scripts\ConversationManager.cs" />
@@ -54,8 +56,6 @@
      <Compile Include="Assets\Scripts\InicioJuego.cs" />
      <Compile Include="Assets\Scripts\InboxButton.cs" />
      <Compile Include="Assets\Scripts\DesuscribeButton.cs" />
-     <Compile Include="Assets\Scripts\Virus.cs" />
-     <Compile Include="Assets\Scripts\VirusManager.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
