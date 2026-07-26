@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Virus : MonoBehaviour
 {
@@ -15,13 +16,27 @@ public class Virus : MonoBehaviour
 
     public VirusManager virusManager;
 
+    public List<Sprite> sprites;
+    private int spriteChosen = 0;
+
     public void startGame(RectTransform contentParent)
     {
+        InvokeRepeating(nameof(changeSprite), 0.75f, 0.75f);
         virusManager = FindObjectOfType<VirusManager>();
         Content_Parent = GetComponent<RectTransform>();
         myRect = GetComponent<RectTransform>();
         Content_Parent = contentParent;
         ChooseRandomTarget();
+    }
+
+    void changeSprite() {
+        Image myImage = GetComponent<Image>();
+        myImage.sprite = sprites[spriteChosen];
+        if (spriteChosen == 0) {
+            spriteChosen = 1;
+        } else {
+            spriteChosen = 0;
+        }
     }
 
     void Update()

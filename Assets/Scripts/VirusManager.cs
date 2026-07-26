@@ -8,9 +8,13 @@ public class VirusManager : MonoBehaviour
     public RectTransform Content_Parent; // Área donde se pueden generar los virus
     private int virusesToGenerate; // Número de virus a generar (entre 5 y 10)
     private int virusesAlive = 0; // Contador de virus vivos
+    private int virusesGenerated = 0;
+
+    private MinigameManager minigameManager;
 
     void Start()
     {
+        minigameManager = FindObjectOfType<MinigameManager>();
         virusesToGenerate = Random.Range(5, 10); // Generar un número aleatorio de virus entre 5 y 10
         StartCoroutine(GenerateViruses());
     }
@@ -58,11 +62,15 @@ public class VirusManager : MonoBehaviour
             virus.GetComponent<RectTransform>().localPosition = new Vector3(x, y, 0);
 
             virus.GetComponent<Virus>().startGame(Content_Parent);
+            virusesGenerated++;
             virusesAlive++;
         }
     }
 
     public void virusDied() {
         virusesAlive--;
+        if (virusesAlive == 0 && virusesGenerated == virusesToGenerate) {
+            minigameManager.siguienteEscena();
+        }
     }
 }

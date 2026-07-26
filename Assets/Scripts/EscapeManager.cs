@@ -8,9 +8,11 @@ public class EscapeManager : MonoBehaviour
     private int clicks;
     private int clicksToEscape;
     public EscapeButton escapeButton;
+    private MinigameManager minigameManager;
 
     void Awake()
     {
+        minigameManager = FindObjectOfType<MinigameManager>();
         clicksToEscape = Random.Range(8, 15);
         clicks = 0;
     }
@@ -24,6 +26,7 @@ public class EscapeManager : MonoBehaviour
             Debug.Log("¡Has escapado!");
             // Aquí puedes agregar la lógica para finalizar el juego o pasar a otra escena
             escapeButton.GetComponent<Button>().interactable = false;
+            minigameManager.siguienteEscena();
         }
         else {
             Debug.Log("Clicks: " + clicks + "/" + clicksToEscape);

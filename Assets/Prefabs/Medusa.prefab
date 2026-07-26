@@ -147,3 +147,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   virusManager: {fileID: 0}
+  sprites:
+  - {fileID: 21300000, guid: 0ebaf6714a8d0c04ca2188650a7922fc, type: 3}
+  - {fileID: 21300000, guid: 12db3cd544648694ea2547268c94e712, type: 3}

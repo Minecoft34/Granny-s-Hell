@@ -6,12 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: 
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Menu Inicial.unity
+    path: Assets/Scenes/MenuInicial.unity
     guid: b7751fa4488f05d4198d9e2450b6e0e3
   - enabled: 1
     path: Assets/Scenes/BloqueoEscena.unity
     guid: f8afb32ffbc7b2740b4c4fb4ed838d86
+  - enabled: 1
+    path: Assets/Scenes/AntivirusScene.unity
+    guid: 5a8f47b3284e7d54cb045e666a5e4e74
+  - enabled: 1
+    path: Assets/Scenes/AppsEscena.unity
+    guid: 3bc36c08966181c49a91fafea302a37c
+  - enabled: 1
+    path: Assets/Scenes/CorreoEscena.unity
+    guid: 39ebc9fb73dfc164f87171294395da45
+  - enabled: 1
+    path: Assets/Scenes/GaleriaEscena.unity
+    guid: 0b795477ddf48824aa8965df1c89d5fb
   m_configObjects: {}

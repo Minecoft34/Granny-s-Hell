@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class GalleryManager : MonoBehaviour
 {
+    private int remainingImages = 15;
+    private MinigameManager minigameManager;
     List<GalleryImage> images = new List<GalleryImage>();
+
+    public void Awake() {
+        minigameManager = FindObjectOfType<MinigameManager>();
+    }
+    
     public void handleSelection(GalleryImage image) {
         if (images.Contains(image))
         {
@@ -20,6 +27,11 @@ public class GalleryManager : MonoBehaviour
     public void deleteSelected() {
         foreach (GalleryImage image in images) {
             Destroy(image.gameObject);
+            remainingImages--;
+            Debug.Log(remainingImages);
+            if (remainingImages == 0) {
+                minigameManager.siguienteEscena();
+            }
         }
         images.Clear();
     }

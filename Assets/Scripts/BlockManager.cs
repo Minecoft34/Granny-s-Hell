@@ -9,8 +9,21 @@ public class BlockManager : MonoBehaviour
     private Coroutine coroutineNextMessage;
     private Coroutine coroutineSendMessages;
     // Start is called before the first frame update
+
+    private MinigameManager minigameManager;
     void Start()
     {
+        minigameManager = FindObjectOfType<MinigameManager>();
+
+        if (minigameManager == null)
+        {
+            Debug.LogError("NO se encontró MinigameManager");
+        }
+        else
+        {
+            Debug.Log("MinigameManager encontrado");
+        }
+
         coroutineSendMessages = StartCoroutine(sendMessages());
     }
 
@@ -36,20 +49,21 @@ public class BlockManager : MonoBehaviour
     }
 
     public void blockContact() {
-    Debug.Log("BLOQUEANDO CONTACTO");
-    blocked = true;
+        Debug.Log("BLOQUEANDO CONTACTO");
+        blocked = true;
 
-    if (coroutineSendMessages != null) {
-        StopCoroutine(coroutineSendMessages);
-        Debug.Log("Parada cola");
+        if (coroutineSendMessages != null) {
+            StopCoroutine(coroutineSendMessages);
+            Debug.Log("Parada cola");
+        }
+
+        if (coroutineNextMessage != null) {
+            StopCoroutine(coroutineNextMessage);
+            Debug.Log("Parada mensaje actual");
+        }
+
+        FTF_SMS.instance.SendSystemMSG();
+        minigameManager.siguienteEscena();
     }
-
-    if (coroutineNextMessage != null) {
-        StopCoroutine(coroutineNextMessage);
-        Debug.Log("Parada mensaje actual");
-    }
-
-    FTF_SMS.instance.SendSystemMSG();
-}
 
 }
