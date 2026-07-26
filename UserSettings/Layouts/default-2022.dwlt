@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -408,7 +408,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 7aceffffc0ceffff0cd2ffff8ad2ffff9ad2ffffaad2ffff98d3ffffb4d3ffff3ad4ffff82d6ffff72d7ffffc0d8ffff4ed9ffff38dbffffc8deffff10dfffff56e2ffffc8e2ffffcee2ffffd8e2ffffb8e3ffffd0e3ffff72e6ffffb4e6ffff2ae7ffffbce9ffff46eaffff8aeaffff2aecffff2eeefffff2eeffff5aefffffb6efffff40f3ffff86f3ffffe8f6ffff5af7ffff60f7ffff6af7ffff4af8ffff62f8ffff2afbffff767d0000ae7d0000e87d0000127e0000307e0000d67e000006800000d4800000de800000da810000ec810000f08600002a870000048800000e880000568900006c890000168b0000688b0000748b0000cc8c0000d88c0000
+      m_ExpandedIDs: 6cc1ffffb4c1ffff16c5ffff88c5ffff8ec5ffff98c5ffff78c6ffff90c6ffff6adaffff7adaffff96dfffffa4e4ffffeae4ffff44e8ffffb6e8ffffbce8ffffc6e8ffffa6e9ffffbee9ffff2afbffffce860000d8860000fe860000228700002c8700003a8700006c870000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -725,7 +725,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 533.9407, y: 116.23084, z: 25432.525}
     speed: 2
-    m_Value: {x: 533.81976, y: 116.13609, z: 25413.822}
+    m_Value: {x: 533.9407, y: 116.23084, z: 25432.525}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -777,7 +777,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 288.70166
     speed: 2
-    m_Value: 288.4853
+    m_Value: 288.70166
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -843,21 +843,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\corte\Desktop\Github\Unity\Granny-s-Hell
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8a5f0000
-    m_LastClickedID: 24458
+    m_SelectedIDs: 985f0000
+    m_LastClickedID: 24472
     m_ExpandedIDs: 000000006c5f00006e5f0000705f0000725f0000745f0000765f0000785f0000885f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

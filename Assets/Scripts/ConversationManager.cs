@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ConversationManager : MonoBehaviour
 {
@@ -37,6 +38,9 @@ public class ConversationManager : MonoBehaviour
 
         // NPC dice "Hola"
         FTF_SMS.instance.AddMessage(true, "Hello honey, what do you need?");
+        Transform ultimo = FTF_SMS.instance.Content_Parent.GetChild(FTF_SMS.instance.Content_Parent.childCount - 1);
+
+        ultimo.GetComponent<Button>().interactable = false;
         ///////////////////////////////////////////////////////////////////////////////////////////////////
 
         // QUE HABLE EL JUGADOR: /////////////////////////////////////////////////////////////////////////
@@ -73,6 +77,10 @@ public class ConversationManager : MonoBehaviour
             FTF_SMS.instance.AddMessage(true, "Oh, okay love.");
         else
             FTF_SMS.instance.AddMessage(true, "They came with my phone.");
+        
+        ultimo = FTF_SMS.instance.Content_Parent.GetChild(FTF_SMS.instance.Content_Parent.childCount - 1);
+
+        ultimo.GetComponent<Button>().interactable = false;
 
 
         chosenOption = -1; // Resetear la opción elegida
@@ -85,6 +93,10 @@ public class ConversationManager : MonoBehaviour
 
         // NPC dice el segundo mensaje (este es común)
         FTF_SMS.instance.AddMessage(true, "Which do we delete?");
+
+        ultimo = FTF_SMS.instance.Content_Parent.GetChild(FTF_SMS.instance.Content_Parent.childCount - 1);
+
+        ultimo.GetComponent<Button>().interactable = false;
 
         yield return new WaitForSeconds(2f);
 
@@ -103,6 +115,7 @@ public class ConversationManager : MonoBehaviour
             FTF_SMS.instance.AddMessage(false, "What about Crossy Road?");
         else
             FTF_SMS.instance.AddMessage(false, "Maybe Candy Crush?");
+        
 
         /////////////////////////////////////////////////////////////////////////////////////////////////
         /// /////////////////////////////////////////////////////////////////////////////////////////////
@@ -116,7 +129,9 @@ public class ConversationManager : MonoBehaviour
         else
             FTF_SMS.instance.AddMessage(true, "But I'm about to beat Margarita's score...!");
 
-        // ...
+        ultimo = FTF_SMS.instance.Content_Parent.GetChild(FTF_SMS.instance.Content_Parent.childCount - 1);
+
+        ultimo.GetComponent<Button>().interactable = false;
 
         chosenOption = -1; // Resetear la opción elegida
         playerHasChosen = false; // Resetear la elección del jugador   
@@ -129,6 +144,11 @@ public class ConversationManager : MonoBehaviour
 
         // NPC dice "Hola"
         FTF_SMS.instance.AddMessage(true, "I don't want to delete it dearie, I have fun with it.");
+
+        ultimo = FTF_SMS.instance.Content_Parent.GetChild(FTF_SMS.instance.Content_Parent.childCount - 1);
+
+        ultimo.GetComponent<Button>().interactable = false;
+
         ///////////////////////////////////////////////////////////////////////////////////////////////////
         /// 
         //QUE HABLE EL NPC: ///////////////////////////////////////////////////////////////////////////////
@@ -137,9 +157,13 @@ public class ConversationManager : MonoBehaviour
 
         // NPC dice "Hola"
         FTF_SMS.instance.AddMessage(true, "Maybe we could delete Facebook?");
+
+        ultimo = FTF_SMS.instance.Content_Parent.GetChild(FTF_SMS.instance.Content_Parent.childCount - 1);
+
+        ultimo.GetComponent<Button>().interactable = false;
+
         ///////////////////////////////////////////////////////////////////////////////////////////////////
         
-
 
         // QUE HABLE EL JUGADOR: /////////////////////////////////////////////////////////////////////////
         yield return new WaitForSeconds(2f);
@@ -178,6 +202,10 @@ public class ConversationManager : MonoBehaviour
             FTF_SMS.instance.AddMessage(true, "Oh, that's okay. Enrique's cat is just a spoiled rotten creature.");
 
 
+        ultimo = FTF_SMS.instance.Content_Parent.GetChild(FTF_SMS.instance.Content_Parent.childCount - 1);
+
+        ultimo.GetComponent<Button>().interactable = false;
+
         chosenOption = -1; // Resetear la opción elegida
         playerHasChosen = false; // Resetear la elección del jugador    
 
@@ -190,6 +218,11 @@ public class ConversationManager : MonoBehaviour
 
         // NPC dice "Hola"
         FTF_SMS.instance.AddMessage(true, "Also, I just don't need that many news in my life.");
+
+        ultimo = FTF_SMS.instance.Content_Parent.GetChild(FTF_SMS.instance.Content_Parent.childCount - 1);
+
+        ultimo.GetComponent<Button>().interactable = false;
+
         ///////////////////////////////////////////////////////////////////////////////////////////////////
         /// 
         /// //QUE HABLE EL NPC: ///////////////////////////////////////////////////////////////////////////////
@@ -198,6 +231,11 @@ public class ConversationManager : MonoBehaviour
 
         // NPC dice "Hola"
         FTF_SMS.instance.AddMessage(true, "They're always saying horrible stuff about the world.");
+
+        ultimo = FTF_SMS.instance.Content_Parent.GetChild(FTF_SMS.instance.Content_Parent.childCount - 1);
+
+        ultimo.GetComponent<Button>().interactable = false;
+
         ///////////////////////////////////////////////////////////////////////////////////////////////////
         
         /// //QUE HABLE EL NPC: ///////////////////////////////////////////////////////////////////////////////
@@ -206,6 +244,11 @@ public class ConversationManager : MonoBehaviour
 
         // NPC dice "Hola"
         FTF_SMS.instance.AddMessage(true, "And I just want to crochet in peace and watch cat videos.");
+
+        ultimo = FTF_SMS.instance.Content_Parent.GetChild(FTF_SMS.instance.Content_Parent.childCount - 1);
+
+        ultimo.GetComponent<Button>().interactable = false;
+
         ///////////////////////////////////////////////////////////////////////////////////////////////////
         
         //QUE HABLE EL NPC: ///////////////////////////////////////////////////////////////////////////////
@@ -214,6 +257,11 @@ public class ConversationManager : MonoBehaviour
 
         // NPC dice "Hola"
         FTF_SMS.instance.AddMessage(true, "I don't need my phone for anything else.");
+
+        ultimo = FTF_SMS.instance.Content_Parent.GetChild(FTF_SMS.instance.Content_Parent.childCount - 1);
+
+        ultimo.GetComponent<Button>().interactable = false;
+
         ///////////////////////////////////////////////////////////////////////////////////////////////////
         
         //QUE HABLE EL NPC: ///////////////////////////////////////////////////////////////////////////////
@@ -222,6 +270,11 @@ public class ConversationManager : MonoBehaviour
 
         // NPC dice "Hola"
         FTF_SMS.instance.AddMessage(true, "I don't need everyone's photos, you can just come see me.");
+
+        ultimo = FTF_SMS.instance.Content_Parent.GetChild(FTF_SMS.instance.Content_Parent.childCount - 1);
+
+        ultimo.GetComponent<Button>().interactable = false;
+
         ///////////////////////////////////////////////////////////////////////////////////////////////////
         
         // QUE HABLE EL JUGADOR: /////////////////////////////////////////////////////////////////////////
@@ -261,6 +314,11 @@ public class ConversationManager : MonoBehaviour
             FTF_SMS.instance.AddMessage(true, "Yes, everything but Bootube.");
 
 
+        ultimo = FTF_SMS.instance.Content_Parent.GetChild(FTF_SMS.instance.Content_Parent.childCount - 1);
+
+        ultimo.GetComponent<Button>().interactable = false;
+
+
         chosenOption = -1; // Resetear la opción elegida
         playerHasChosen = false; // Resetear la elección del jugador    
 
@@ -272,6 +330,11 @@ public class ConversationManager : MonoBehaviour
 
         // NPC dice "Hola"
         FTF_SMS.instance.AddMessage(true, "Well, anyways, delete it for me Izan.");
+
+        ultimo = FTF_SMS.instance.Content_Parent.GetChild(FTF_SMS.instance.Content_Parent.childCount - 1);
+
+        ultimo.GetComponent<Button>().interactable = false;
+
         ///////////////////////////////////////////////////////////////////////////////////////////////////
         /// 
         //QUE HABLE EL NPC: ///////////////////////////////////////////////////////////////////////////////
@@ -280,6 +343,11 @@ public class ConversationManager : MonoBehaviour
 
         // NPC dice "Hola"
         FTF_SMS.instance.AddMessage(true, "You know the buttons are too small for me.");
+
+        ultimo = FTF_SMS.instance.Content_Parent.GetChild(FTF_SMS.instance.Content_Parent.childCount - 1);
+
+        ultimo.GetComponent<Button>().interactable = false;
+        
         ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 
