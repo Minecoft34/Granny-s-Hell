@@ -364,6 +364,7 @@
 "Assets/Scripts/BlockButton.cs"
 "Assets/Scripts/BlockManager.cs"
 "Assets/Scripts/ChoiceButton.cs"
+"Assets/Scripts/ClickManager.cs"
 "Assets/Scripts/ConversationManager.cs"
 "Assets/Scripts/DeleteButton.cs"
 "Assets/Scripts/DeleteMessage.cs"
@@ -381,6 +382,7 @@
 "Assets/Scripts/UIDrag.cs"
 "Assets/Scripts/Virus.cs"
 "Assets/Scripts/VirusManager.cs"
+"Assets/Shaders/VHSPostProcess.cs"
 -langversion:9.0
 
 /deterministic

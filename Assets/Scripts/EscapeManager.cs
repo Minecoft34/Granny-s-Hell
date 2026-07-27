@@ -9,9 +9,12 @@ public class EscapeManager : MonoBehaviour
     private int clicksToEscape;
     public EscapeButton escapeButton;
     private MinigameManager minigameManager;
+    private ClickManager clickManager;
 
     void Awake()
     {
+        clickManager = FindObjectOfType<ClickManager>();
+        clickManager.enabled = true;
         minigameManager = FindObjectOfType<MinigameManager>();
         clicksToEscape = Random.Range(8, 15);
         clicks = 0;

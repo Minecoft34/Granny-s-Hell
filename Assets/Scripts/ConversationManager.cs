@@ -17,6 +17,8 @@ public class ConversationManager : MonoBehaviour
 
     private MinigameManager minigameManager;
 
+    private ClickManager clickManager;
+
     // ---------- VARIABLES ----------
     // ¿Ha elegido el jugador?
     private bool playerHasChosen = false;
@@ -25,6 +27,8 @@ public class ConversationManager : MonoBehaviour
 
     void Start()
     {
+        clickManager = FindObjectOfType<ClickManager>();
+        clickManager.enabled = false;
         minigameManager = FindObjectOfType<MinigameManager>();
         // Iniciar la conversación
         StartCoroutine(Conversation());

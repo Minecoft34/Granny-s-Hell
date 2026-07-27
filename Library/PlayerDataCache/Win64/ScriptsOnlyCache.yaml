@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - BlockButton
     - BlockManager
     - ChoiceButton
+    - ClickManager
     - ConversationManager
     - DeleteButton
     - DeleteMessage
@@ -20,6 +21,7 @@ ScriptsOnlyBuild:
     - SMS_Selected
     - SelectionManager
     - UIDrag
+    - VHSPostProcess
     - Virus
     - VirusManager
     Unity.2D.Animation.Editor.dll:
@@ -135,11 +137,11 @@ ScriptsOnlyBuild:
     fullTypeName: Virus
     methodName: onClick
   - assembly: Assembly-CSharp
-    fullTypeName: SMS_Selected
-    methodName: onClick
-  - assembly: Assembly-CSharp
     fullTypeName: ChoiceButton
     methodName: OnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: SMS_Selected
+    methodName: onClick
   - assembly: Assembly-CSharp
     fullTypeName: InboxButton
     methodName: onClick
@@ -268,6 +270,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6968}
     - Class: 114
       Script: {instanceID: 7390}
+    - Class: 114
+      Script: {instanceID: 25108}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -426,6 +430,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 8758}
     - Class: 114
       Script: {instanceID: 8762}
+    - Class: 114
+      Script: {instanceID: 25108}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -499,6 +505,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9146}
     - Class: 114
       Script: {instanceID: 9192}
+    - Class: 114
+      Script: {instanceID: 25108}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -562,6 +570,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6968}
     - Class: 114
       Script: {instanceID: 7390}
+    - Class: 114
+      Script: {instanceID: 25108}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -629,6 +639,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7390}
     - Class: 114
       Script: {instanceID: 7688}
+    - Class: 114
+      Script: {instanceID: 25108}
+    - Class: 114
+      Script: {instanceID: 53906}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1704,6 +1718,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 3f1d68cdfdfe90c3222022424229160b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VHSPostProcess
+  - hash:
+      serializedVersion: 2
+      Hash: 248c71de6eb31931ffd7a1af2c8554b0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ClickManager
   platform: 19
   scenePathNames:
   - Assets/Scenes/MenuInicial.unity
