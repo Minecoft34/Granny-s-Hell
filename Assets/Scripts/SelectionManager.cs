@@ -22,6 +22,10 @@ public class SelectionManager : MonoBehaviour
             Destroy(message.gameObject);
         }
         messages.Clear();
+        FTF_SMS.instance.actualizarEstadoScroll();
+        if (FTF_SMS.instance.estabaAbajo) {
+            FTF_SMS.instance.autoScroll();
+        }
     }
 
     public void clearSelection() {

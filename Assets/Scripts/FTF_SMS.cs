@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class FTF_SMS : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class FTF_SMS : MonoBehaviour
     public GameObject PlayerSMS_Ins;
     public GameObject ContactSMS_Ins;
     public GameObject SystemMSG_Ins;
+
+    public ScrollRect ScrollView_Rect;
+    public bool estabaAbajo = false;
 
     private void Awake()
     {
@@ -26,6 +30,8 @@ public class FTF_SMS : MonoBehaviour
 
     public void AddMessage(bool Sender_Player, string Message)
     {
+        actualizarEstadoScroll();
+
         if (Sender_Player)
         {
             //Con Instantiate hacemos una copia de un prefab y lo añadimos a la escena. Hacemos copia del prefab que es el primer argumento y lo añadimos en la escena donde el segundo argumento.
@@ -50,6 +56,11 @@ public class FTF_SMS : MonoBehaviour
             TextMeshProUGUI txt = contactSMS_Text.Text_Reference;
             txt.text = Message;
         }
+
+        if (estabaAbajo)
+        {
+            StartCoroutine(autoScroll());
+        }
     }
 
     public void SendSystemMSG()
@@ -58,5 +69,28 @@ public class FTF_SMS : MonoBehaviour
         GameObject sysMSG = Instantiate(SystemMSG_Ins, Content_Parent.transform.position, Quaternion.identity);
         //Quaternion.identity significa que el mensaje aparece sin rotación, es decir, con rotación 0,0,0. 
         sysMSG.transform.SetParent(Content_Parent.transform, false);
+        StartCoroutine(autoScroll());
+    }
+
+    public IEnumerator autoScroll()
+    {
+        yield return new WaitForEndOfFrame();
+        Canvas.ForceUpdateCanvases();
+        ScrollView_Rect.verticalNormalizedPosition = 0f;
+    }
+
+    public void actualizarEstadoScroll()
+    {
+        float contentHeight = ScrollView_Rect.content.rect.height;
+        float viewportHeight = ScrollView_Rect.viewport.rect.height;
+
+        if (contentHeight <= viewportHeight)
+        {
+            estabaAbajo = true;
+        }
+        else
+        {
+            estabaAbajo = ScrollView_Rect.verticalNormalizedPosition <= 0.05f;
+        }
     }
 }
