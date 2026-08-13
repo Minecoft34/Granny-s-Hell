@@ -195,6 +195,8 @@ struct EventSystem_t61C51380B105BE9D2C39C4F15B7E655659957707;
 struct FTF_SMS_t659C62669C4C91C7DD7410FC53A06613AF81E23C;
 // FTF_SMS_TMProRef
 struct FTF_SMS_TMProRef_tDE4004557BFD6DE14E121AA6CFE1AFA7015E5A60;
+// FullscreenWarning
+struct FullscreenWarning_tA519A13A232D83DA4485C20614AD7538BDFA7103;
 // GalleryImage
 struct GalleryImage_t784D683C7FE8F881E2D67110F5851B49D59FBE3A;
 // GalleryManager
@@ -2475,6 +2477,13 @@ struct FTF_SMS_TMProRef_tDE4004557BFD6DE14E121AA6CFE1AFA7015E5A60  : public Mono
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___Text_Reference_4;
 };
 
+// FullscreenWarning
+struct FullscreenWarning_tA519A13A232D83DA4485C20614AD7538BDFA7103  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject FullscreenWarning::canvasToDestroy
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___canvasToDestroy_4;
+};
+
 // GalleryImage
 struct GalleryImage_t784D683C7FE8F881E2D67110F5851B49D59FBE3A  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -3687,6 +3696,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForEndOfFrame__ctor_m4AF7E576C01E6B0
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Canvas_ForceUpdateCanvases_m6ECDBC5E85ADA3301BB20611753C45769F15EB51 (const RuntimeMethod* method) ;
 // System.Void UnityEngine.UI.ScrollRect::set_verticalNormalizedPosition(System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScrollRect_set_verticalNormalizedPosition_m4AF461113925E6710BF04F46A49CF1F856F7738C (ScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E* __this, float ___value0, const RuntimeMethod* method) ;
+// System.Void FullscreenWarning::CheckFullscreen()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FullscreenWarning_CheckFullscreen_mD90838DD04D80DBE7A8986425F6F0D8F6A554E0B (FullscreenWarning_tA519A13A232D83DA4485C20614AD7538BDFA7103* __this, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Screen::get_fullScreen()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Screen_get_fullScreen_m9B3B4F9FB4B6FD6E1AEF626736C4462A2FD7407C (const RuntimeMethod* method) ;
 // System.Void GalleryManager::handleSelection(GalleryImage)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GalleryManager_handleSelection_mA2AF47862A5FCB7651EEFD5887A6053D2AF46FE8 (GalleryManager_tF13FC0690FF430840F33633178127E7F17FC537E* __this, GalleryImage_t784D683C7FE8F881E2D67110F5851B49D59FBE3A* ___image0, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.List`1<GalleryImage>::Contains(T)
@@ -6864,6 +6877,81 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CautoScrollU3Ed__10_System_C
 #endif
 // System.Void FTF_SMS_TMProRef::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FTF_SMS_TMProRef__ctor_m99DAC37DC166CD9E77C780995B88D4572D338346 (FTF_SMS_TMProRef_tDE4004557BFD6DE14E121AA6CFE1AFA7015E5A60* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void FullscreenWarning::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FullscreenWarning_Start_m2409599BE4F307BE4E127F94723507E1362D7B32 (FullscreenWarning_tA519A13A232D83DA4485C20614AD7538BDFA7103* __this, const RuntimeMethod* method) 
+{
+	{
+		// CheckFullscreen();
+		FullscreenWarning_CheckFullscreen_mD90838DD04D80DBE7A8986425F6F0D8F6A554E0B(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void FullscreenWarning::CheckFullscreen()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FullscreenWarning_CheckFullscreen_mD90838DD04D80DBE7A8986425F6F0D8F6A554E0B (FullscreenWarning_tA519A13A232D83DA4485C20614AD7538BDFA7103* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Screen.fullScreen)
+		bool L_0;
+		L_0 = Screen_get_fullScreen_m9B3B4F9FB4B6FD6E1AEF626736C4462A2FD7407C(NULL);
+		if (!L_0)
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		// Destroy(canvasToDestroy);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___canvasToDestroy_4;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_1, NULL);
+	}
+
+IL_0012:
+	{
+		// }
+		return;
+	}
+}
+// System.Void FullscreenWarning::OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FullscreenWarning_OnPointerClick_m6EACA7BB4E909EBF8A9B086DFD6AE0DFE03E9E34 (FullscreenWarning_tA519A13A232D83DA4485C20614AD7538BDFA7103* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___eventData0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Destroy(canvasToDestroy);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___canvasToDestroy_4;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void FullscreenWarning::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FullscreenWarning__ctor_m30FA8AC54CA5E4F11E74130E5A2BD733DDBC81D6 (FullscreenWarning_tA519A13A232D83DA4485C20614AD7538BDFA7103* __this, const RuntimeMethod* method) 
 {
 	{
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);

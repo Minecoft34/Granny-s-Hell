@@ -340,6 +340,7 @@
 "Assets/Scripts/EscapeManager.cs"
 "Assets/Scripts/FTF_SMS.cs"
 "Assets/Scripts/FTF_SMS_TMProRef.cs"
+"Assets/Scripts/FullscreenWarning.cs"
 "Assets/Scripts/GalleryImage.cs"
 "Assets/Scripts/GalleryManager.cs"
 "Assets/Scripts/InboxButton.cs"

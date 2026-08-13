@@ -14,6 +14,7 @@ ScriptsOnlyBuild:
     - EscapeManager
     - FTF_SMS
     - FTF_SMS_TMProRef
+    - FullscreenWarning
     - GalleryImage
     - GalleryManager
     - InboxButton
@@ -643,6 +644,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7396}
     - Class: 114
       Script: {instanceID: 7694}
+    - Class: 114
+      Script: {instanceID: 32428}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1730,6 +1733,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: f5728ee6879b919a64ad725aab3c5364
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FullscreenWarning
   platform: 19
   scenePathNames:
   - Assets/Scenes/MenuInicial.unity
@@ -1738,4 +1747,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/AppsEscena.unity
   - Assets/Scenes/CorreoEscena.unity
   - Assets/Scenes/GaleriaEscena.unity
-  playerPath: C:/Users/corte/Desktop/Granny's Hell/Windows/Granny's Hell.exe
+  playerPath: C:/Users/corte/Desktop/Granny's Hell/Prueba/Granny's Hell.exe
